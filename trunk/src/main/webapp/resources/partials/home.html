@@ -1,0 +1,263 @@
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Login AS</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a ng-click="selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+<div ng-controller="HomeCtrl">
+
+<!-- PAGE WRAP -->
+<div id="page-wrap">
+
+
+<!-- HOME SLIDER -->
+<section class="slide" style="height:450px;" >
+  <div class="slide-cn" id="slide-home"> 
+    <!-- SLIDE ITEM -->
+    <div class="slide-item">
+      <div class="banner-slogan" >
+        <div class="text">
+          <h2>Tomorrow's Leaders</h2>
+          <p>Exceptional learners <br>
+            today become exceptional <br>
+            leaders tomorrow </p>
+          <div class="group"> <a href="#" class="mc-btn btn-style-1">Call To Action</a> </div>
+        </div>
+      </div>
+      <div class="img"> <img src="/tidels/resources/images/homeslider/tidels.png" alt=""> </div>
+    </div>
+    <!-- SLIDE ITEM --> 
+  
+    <!-- SLIDE ITEM -->
+    <div class="slide-item">
+      <div class="banner-slogan" >
+        <div class="text">
+          <h2>Study what you like</h2>
+          <p>Pick and Study <br>
+            What you like at your <br>
+            own pacce. </p>
+          <div class="group"> <a href="#" class="mc-btn btn-style-1">Call To Action</a> </div>
+        </div>
+      </div>
+      <div class="img"> <img src="/tidels/resources/images/homeslider/banner1.jpg" alt=""> </div>
+    </div>
+    <!-- SLIDE ITEM --> 
+    
+    <!-- SLIDE ITEM -->
+    <div class="slide-item">
+    <div class="banner-slogan" >
+        <div class="text">
+          <h2>Bring teachers home</h2>
+          <p>Pick your best teacher <br>
+            bring them home <br>
+            Ohline. </p>
+          <div class="group"> <a href="#" class="mc-btn btn-style-1">Call To Action</a> </div>
+        </div>
+      </div>
+      <div class="img"> <img src="/tidels/resources/images/homeslider/banner2.jpg" alt=""> </div>
+    </div>
+    <!-- SLIDE ITEM --> 
+    
+    <!-- SLIDE ITEM -->
+    <div class="slide-item">
+    <div class="banner-slogan" >
+        <div class="text">
+          <h2>Kids love it</h2>
+          <p>Learning is fun <br>
+            when you enjoy doing <br>
+            at your leisure </p>
+          <div class="group"> <a href="#" class="mc-btn btn-style-1">Call To Action</a> </div>
+        </div>
+      </div>
+      <div class="img"> <img src="/tidels/resources/images/homeslider/banner3.jpg" alt=""> </div>
+    </div>
+    <!-- SLIDE ITEM --> 
+    
+  </div>
+</section>
+<!-- END / HOME SLIDER --> 
+
+<!-- AFTER SLIDER -->
+<section id="after-slider" class="after-slider section">
+  <div class="awe-color bg-color-1"></div>
+  <div class="after-slider-bg-2"></div>
+  <div class="container">
+    <div class="after-slider-content tb">
+      <div class="inner tb-cell">
+        <h4>Find your topic</h4>
+        <div class="course-keyword">
+          <input type="text" placeholder="Course keyword">
+        </div>
+        <div class="mc-select-wrap">
+          <div class="mc-select">
+            <select class="select" name="" id="all-categories">
+              <option value="" selected>All Class</option>
+              <option value="">2</option>
+            </select>
+          </div>
+        </div>
+        <div class="mc-select-wrap">
+          <div class="mc-select">
+            <select class="select" name="" id="beginner-level">
+              <option value="" selected>All Subject</option>
+              <option value="">Beginner level 2</option>
+              <option value="">Beginner level 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="tb-cell text-right">
+        <div class="form-actions">
+          <input type="submit" value="Find Topic" class="mc-btn btn-style-1">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END / AFTER SLIDER --> 
+
+<!-- SECTION 1 -->
+<section id="mc-section-1" class="mc-section-1 section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="mc-section-1-content-1">
+          <h2 class="big">Salient Features</h2>
+          <p class="mc-text">Here are few reasons why you should go with Tidels. You will not only agree with us, our advance thanks to you for advocating us. </p>
+          <a href="#" class="mc-btn btn-style-1">Read More</a> </div>
+      </div>
+      <div class="col-md-6 col-lg-offset-1">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="featured-item"> <i class="icon icon-featured-1"></i>
+              <h4 class="title-box text-uppercase">Download the coure</h4>
+              <p>You can download the courses and learn them offline, so you don't need an internet connection always.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="featured-item"> <i class="icon icon-featured-2"></i>
+              <h4 class="title-box text-uppercase">Feature 2</h4>
+              <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="featured-item"> <i class="icon icon-featured-3"></i>
+              <h4 class="title-box text-uppercase">Feature 3</h4>
+              <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="featured-item"> <i class="icon icon-featured-4"></i>
+              <h4 class="title-box text-uppercase">Feature 4</h4>
+              <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END / SECTION 1 --> 
+
+
+<!-- SECTION 3 -->
+<section id="mc-section-3" class="mc-section-3 section">
+  <div class="container"> 
+    <!-- FEATURE -->
+    <div class="feature-course">
+      <h4 class="title-box text-uppercase">FEATURED COURSES</h4>
+      <a href="#/categories" class="all-course mc-btn btn-style-1">View all</a>
+      <div class="row">
+        <div class="feature-slider">
+          <div class="mc-item mc-item-1">
+            <div class="image-heading"> <img src="/tidels/resources/images/feature/img-1.jpg" alt=""> </div>
+            <div class="meta-categories"><a href="#/course">Subject</a></div>
+            <div class="content-item">
+              <h4><a href="#/course">Description text goes here</a></h4>
+              <div class="name-author"> For <a href="#/course">Class goes here</a> </div>
+            </div>
+          </div>
+          <div class="mc-item mc-item-1">
+            <div class="image-heading"> <img src="/tidels/resources/images/feature/img-1.jpg" alt=""> </div>
+            <div class="meta-categories"><a href="#/course">Subject</a></div>
+            <div class="content-item">
+              <h4><a href="#/course">Description text goes here</a></h4>
+              <div class="name-author"> <span>For <a href="#/course">Class goes here</a></span> </div>
+            </div>
+          </div>
+          <div class="mc-item mc-item-1">
+            <div class="image-heading"> <img src="/tidels/resources/images/feature/img-1.jpg" alt=""> </div>
+            <div class="meta-categories"><a href="#/course">Subject</a></div>
+            <div class="content-item">
+              <h4><a href="#/course">Description text goes here</a></h4>
+              <div class="name-author"> <span>For <a href="#/course">Class goes here</a></span> </div>
+            </div>
+          </div>
+          <div class="mc-item mc-item-1">
+            <div class="image-heading"> <img src="/tidels/resources/images/feature/img-1.jpg" alt=""> </div>
+            <div class="meta-categories"><a href="#/course">Subject</a></div>
+            <div class="content-item">
+              <h4><a href="#/course">Description text goes here</a></h4>
+              <div class="name-author"> <span>For <a href="#/course">Class goes here</a></span> </div>
+            </div>
+          </div>
+          <div class="mc-item mc-item-1">
+            <div class="image-heading"> <img src="/tidels/resources/images/feature/img-1.jpg" alt=""> </div>
+            <div class="meta-categories"><a href="#/course">Subject</a></div>
+            <div class="content-item">
+              <h4><a href="#/course">Description text goes here</a></h4>
+              <div class="name-author"> <span>For <a href="#/course">Class goes here</a></span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END / FEATURE --> 
+  </div>
+</section>
+<!-- END / SECTION 3 --> 
+
+
+
+<!-- BEFORE FOOTER -->
+<section id="before-footer" class="before-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="mc-count-item">
+          <h4>Courses</h4>
+          <p><span class="countup">2536,556</span></p>
+        </div>
+        <div class="mc-count-item">
+          <h4>Teachers</h4>
+          <p><span class="countup">10,389</span></p>
+        </div>
+        <div class="mc-count-item">
+          <h4>Students</h4>
+          <p><span class="countup">34,177</span></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="before-footer-link"> <a href="#" class="mc-btn btn-style-2">Register As Student</a> <a href="#" class="mc-btn btn-style-1">Register As Teacher</a> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END / BEFORE FOOTER --> 
+
+</div>
+<!-- END / PAGE WRAP --> 
+	
+</div>

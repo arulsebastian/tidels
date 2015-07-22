@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div ng-controller="DotsCtrl">
+
+
+        <form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+            
+             
+        </form>
+              
+
+<button class="btn btn-lg btn-primary btn-green" type="submit" ng-disabled="loading" ng-click="saveEditor();">
+<span ng-show="!loading">Save Question</span>
+</button>
+
+<form class="form" ng-submit="DotsCtrl.submit()">
+
+<div id='question'>
+<div id='answer'>
+ 
+<h2>How many dots are there?</h2>
+<img src="resources/img/dots.jpg"><br>
+
+
+Enter One<input type="text" name="id" value="One">
+<br>
+Enter Two<input type="text" name="id" value="Two">
+<br>
+
+<input type="radio" name="id" value="One">One
+<br>
+<input type="radio" name="id" value="Two">Two
+<br>
+<input type="radio" name="id" value="Three">Three
+<br>
+<input type="radio" name="id" value="Four">Four
+<br>
+
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+  <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+
+
+</div>
+</div>
+
+
+<button class="btn btn-lg btn-primary btn-green" type="submit" ng-disabled="loading" ng-click="submitAnser();">
+<span ng-show="!loading">Submit</span> &nbsp;&nbsp;&nbsp;
+<button class="btn btn-lg btn-primary btn-green" type="submit" ng-disabled="loading" ng-click="saveAnswer();">
+<span ng-show="!loading">Save Anser</span>
+</button>
+</form>
+
+</div>
+
+                        <script>
+         alert("test");
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'editor1');
+            </script>      
+</body>
+</html>
+    

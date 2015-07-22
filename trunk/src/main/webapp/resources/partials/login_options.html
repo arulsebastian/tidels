@@ -1,0 +1,14 @@
+
+<form class="form">
+  <h2 class="form-heading">Please Select</h2>
+  <div class="form-fields">
+  </div>
+		<input name="person_type" type="radio" class="form-control" value="teacher" ng-click="change_logintype();">Teacher&nbsp&nbsp&nbsp&nbsp
+		<input name="person_type" type="radio" class="form-control" value="parent" ng-click="change_logintype();">Parent&nbsp&nbsp&nbsp&nbsp
+		<input name="person_type" type="radio" class="form-control" value="student" ng-click="change_logintype();">Student
+  <button class="btn btn-primary btn-block" type="submit" ng-disabled="loading" ng-click="change_logintype();">
+<!-- 		<span ng-show="!loading">Submit</span> -->
+<!-- 		<img ng-show="loading" src="img/ajax-loader-blue.gif"> -->
+	</button>
+  <div ng-show="error" class="alert alert-danger">{{ error.message }}</div>
+</form>

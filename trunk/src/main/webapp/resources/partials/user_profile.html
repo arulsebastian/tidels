@@ -1,0 +1,113 @@
+<div ng-controller="UserProfileCtrl">
+  <tabset id="tab1">
+    <tab heading="User Profile">
+    				<form class="form" ng-submit="HomeCtrl.submit()">
+						<div ng-show="!loading">
+							<table>
+								<tr>
+									<td><img ng-src="{{user.properties['photo'].value}}" /></td>
+									<td>
+										<button id="edit" class="" ng-click="editUser();">Edit</button>
+										<button id="save" type="submit" class="getDefoult"
+											ng-click="saveUser();">Save</button>
+									</td>
+								</tr>
+							</table>
+
+						</div>
+						<input id="first_name" ng-disabled="userDisabled"
+							placeholder="First Name" type="text" class="form-control"
+							ng-model="user.first_name"> 
+						<input id="last_name"
+							ng-disabled="userDisabled" placeholder="Last Name" type="text"
+							class="form-control" ng-model="user.last_name"> 
+						<input
+							id="login" ng-disabled="userDisabled" placeholder="Email"
+							type="text" class="form-control" ng-model="user.email"
+							ua-is-email> 
+						<input id="street1"
+							ng-disabled="userDisabled" placeholder="Street1" type="text"
+							class="form-control" ng-model="user.properties['street1'].value">
+						<input id="street2" ng-disabled="userDisabled"
+							placeholder="Street2" type="text" class="form-control"
+							ng-model="user.properties['street2'].value"> 
+						<input
+							id="city" ng-disabled="userDisabled" placeholder="City"
+							type="text" class="form-control"
+							ng-model="user.properties['city'].value"> 
+						<input
+							id="state" ng-disabled="userDisabled" placeholder="State"
+							type="text" class="form-control"
+							ng-model="user.properties['state'].value"> 
+						<input
+							id="country" ng-disabled="userDisabled" placeholder="Country"
+							type="text" class="form-control"
+							ng-model="user.properties['country'].value">
+						<input
+							id="zipcode" ng-disabled="userDisabled" placeholder="zipcode"
+							type="text" class="form-control"
+							ng-model="user.properties['zipcode'].value">
+						<input
+							id="age" ng-disabled="userDisabled" placeholder="age"
+							type="text" class="form-control"
+							ng-model="user.properties['age'].value">
+						<input
+							id="gender" ng-disabled="userDisabled" placeholder="gender"
+							type="text" class="form-control"
+							ng-model="user.properties['gender'].value">
+						<input
+							id="qualifications" ng-disabled="userDisabled" placeholder="qualifications"
+							type="text" class="form-control"
+							ng-model="user.properties['qualifications'].value">
+						<p>Are You a Teacher?</p>
+                            <input type="is_teacher" name="teacher" value="yes">Yes
+                            <input type="is_teacher" name="teacher" value="no">No
+                            ng-model="user.properties['is_teacher'].value"><br>
+                            <p>Teaching Subjects</p>
+						<input
+							id="teaching_subjects" ng-disabled="userDisabled" placeholder="teaching_subjects"
+							type="text" class="form-control"
+                            ng-model="user.properties['teaching_subjects'].value"><br>    
+						<input
+							id="teaching_qualification" ng-disabled="userDisabled" placeholder="teaching qualification"
+							type="text" class="form-control"
+							ng-model="user.properties['teaching_qualification'].value">
+						<input
+							id="students" ng-disabled="userDisabled" placeholder="students"
+							type="text" class="form-control"
+							ng-model="user.properties['students'].value">
+						<input
+							id="is_student" ng-disabled="userDisabled" placeholder="is stuent"
+							type="text" class="form-control"
+							ng-model="user.properties['is_student'].value">
+						<input
+							id="learning_subjects" ng-disabled="userDisabled" placeholder="learning subjects"
+							type="text" class="form-control"
+							ng-model="user.properties['learning_subjects'].value">
+						<input
+							id="learning_qualifications" ng-disabled="userDisabled" placeholder="learning qualifications"
+							type="text" class="form-control"
+							ng-model="user.properties['learning_qualifications'].value">
+						<input
+							id="teachers" ng-disabled="userDisabled" placeholder="teachers"
+							type="text" class="form-control"
+							ng-model="user.properties['teachers'].value">
+				</form>
+    
+    
+    
+    
+    </tab>
+    <tab heading="Teachers">
+    </tab>
+    <tab heading="Parent">
+    </tab>
+    <tab heading="Stuent">
+    <div class="gridWidthWrapper">
+        <div  class="gridStyle"  id="grid1" ui-grid="{ data: myData, options: gridOptions }" class="grid"></div>
+    </div>
+    </tab>
+  </tabset>
+
+  
+  

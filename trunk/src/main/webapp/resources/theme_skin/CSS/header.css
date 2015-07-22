@@ -1,0 +1,138 @@
+.header {
+    display: inline-block;
+    height: 60px;
+    vertical-align: top;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.logo {
+    position: relative;
+    z-index: 999;
+    float: left;
+}
+
+a {
+    text-decoration: none !important;
+}
+.logo a{
+	height:38px;      
+	background: url("../images/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 38px;
+    margin: 5px;
+    width: 150px;
+	}
+.index-page .logo a{
+	height:38px;      
+	background: url("../images/logo-white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 38px;
+    margin: 5px;
+    width: 150px;
+	}
+.logo img {
+    vertical-align: top;
+    width: 100%;
+    margin: 7px 0 0;
+}
+
+.nav-wrap {
+    float: right;
+    font-family: rivNavFont,sans-serif;
+    margin-top: 20px;
+}
+
+.button-nav {
+    background: url("images/menu.png") no-repeat scroll 10px center rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+    color: #000;
+    display: none;
+    float: right;
+    font-size: 20px;
+    outline: medium none;
+    padding: 10px 15px 10px 45px;
+    text-align: left;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+}
+ol, ul {
+    list-style: none outside none;
+}
+
+.nav li {
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 2px;
+    text-transform: uppercase;
+	cursor:pointer;
+}
+.nav li .img {
+    background-color: #000;
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    position: relative;
+    top: -10px;
+    width: 40px;
+}
+.nav a {
+    background-size: 0 auto;
+    color: #2c2b26;
+    padding: 3px 14px 2px;
+    transition: all 0.3s linear 0s;
+}
+a {
+    text-decoration: none !important;
+}
+
+.green {
+    background: none repeat scroll 0 0 #009c7e;
+}
+.teach {
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 12px;
+}
+.header input {
+    background: none repeat scroll 0 0 #f0f0f0;
+    border: medium none;
+    border-radius: 5px 0 0 5px;
+    color: #372e49;
+    float: left;
+    font-weight: normal;
+    padding: 7px 25px;
+    width: 165px;
+}
+.header .right { float:right; }
+.header .middle { float:left; margin-left:20px; padding-top:11px; }
+.header .inputWrap { float:left; margin-right:10px; position:relative; }
+.header .inputWrapButton { width:36px; height:36px; position:absolute; overflow:hidden; left:0; top:0; background: url("images/menu.png") no-repeat scroll center 5px #fff; }
+.header button{ float:left;
+	background: url("../images/icons/search-icon.png") no-repeat scroll center center / 20px auto #009c7e;
+    border: medium none;
+    border-radius: 0 5px 5px 0;
+    height: 30px;
+    width: 10%;
+	}
+	
+.header select{ padding: 6px 15px;
+    width: 130%;
+	outline:none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.header .dropNav { position:absolute; display:none; background-color:#fff; width:200px; top:60px; z-index:999; padding-bottom:7px; border-radius:0 0 3px 3px; box-shadow:0 0 2px rgba(0,0,0,0.3) }
+.header .dropNav li { display:block; float:none; width:100%; border-bottom:1px #eee solid; margin:0; }
+.header .dropNav li a { padding:10px; display:block; transition:0.3s all ease-in-out; }
+.header .dropNav li a:hover { background:#00bbb0; color:#fff;}

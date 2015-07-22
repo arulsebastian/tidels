@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+
+.login .modal-cell {
+    padding: 20px;
+}
+
+.login .modal-content.signup {
+	
+    width: 315px;
+}
+
+.login .modal-content {
+    position: relative;
+    border-radius: 2px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
+}
+
+.login .fb-button-container-centered {
+	widows:275px;
+	height:43px;
+    text-align: left;
+    background-color: #3b5998;
+	margin-bottom:10px;
+}
+
+.login .fb-button {
+    left: auto;
+    display: inline-block;
+    cursor: pointer !important;
+}
+
+.login a {
+    color: #009C7E;
+    text-decoration: underline;
+}
+.login .fb-button-left {
+    float: left;
+    height: 40px;
+    width: 40px;
+	margin-top:5px;
+	margin-left:15px;
+    background: url('images/FB.jpg') no-repeat scroll left top transparent;
+}
+
+.login .fb-button-center {
+    text-align: center;
+    width: 256px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #3b5998;
+    background-position: left -40px;
+    background-repeat: repeat-x;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.login .fb-button-right, .fb-button-center, .fb-button-left {
+    float: left;
+    height: 40px;
+}
+.login .fb-button-right {
+    width: 6px;
+    background-position: 100% -80px !important;
+}
+
+.login .google-button-container-centered {
+	widows:275px;
+	height:43px;
+    text-align: left;
+    background-color: #FFF;
+	margin-bottom:10px;
+	background-color:#e35746;
+}
+
+.login .google-button {
+    left: auto;
+    display: inline-block;
+    cursor: pointer !important;
+}
+
+.login a {
+    color: #009C7E;
+    text-decoration: underline;
+}
+.login .google-button-left {
+    float: left;
+    height: 40px;
+    width: 40px;
+	margin-top:5px;
+	margin-left:15px;
+    background: url('images/gplus.jpg') no-repeat scroll left top transparent;
+}
+
+.login .google-button-center {
+    text-align: center;
+    width: 256px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-position: left -40px;
+    background-repeat: repeat-x;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.login .google-button-right, .google-button-center, .google-button-left {
+    float: left;
+    height: 40px;}
+.login .google-button-right {
+    width: 6px;
+    background-position: 100% -80px !important;
+}
+
+.panel-login {
+	width:315px;
+	text-decoration:none;
+	background-color: #fff;
+    /*border: 1px solid #dce0e0;*/
+    border-radius: 0;
+	margin-bottom:10px;
+}
+.login .divider{
+    color:#ccc;
+    width:90%;
+    margin:12px auto;
+    overflow:hidden;
+    text-align:center;   
+    line-height:1em;
+	color:#999;
+	font:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:18px;
+}
+
+.login .divider:before, .divider:after{
+    content:"";
+    vertical-align:top;
+    display:inline-block;
+    width:50%;
+    height:0.65em;
+    border-bottom:1px solid #ccc;
+    margin:0 2% 0 -55%;
+}
+.login .divider:after{
+    margin:0 -55% 0 2%;
+}
+
+.login input {
+    background-color: #fff;
+    border: 1px solid #dce0e0;
+    border-radius: 3px;
+    color: #565a5c;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    outline: medium none;
+    /*padding: 7px 2%;*/
+    transition: all 0.3s linear 0s;
+    width: 96%;
+}
+
+.login .advancedSearchTextbox {
+        margin-right: -4px;	
+}
+
+.login .input.at {
+	background:url('images/at.jpg') no-repeat scroll 7px 7px;
+	background-position:right;
+}
+
+.login .input.lock {
+	background:url('images/lock.jpg') no-repeat scroll 7px 7px;
+	background-position:right;
+	
+}
+
+.login .input.user {
+	background:url('images/user.jpg') no-repeat scroll 7px 7px;
+	background-position:right;
+	
+}
+
+.login .glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 2px;
+}
+
+.login .glowing-border:focus { 
+    outline: none;
+    border-color: #0eae8f;
+    box-shadow: 0 0 2px 0eae8f;
+}
+
+.login .p {
+	font-size:14px;
+	color:#666666;
+}
+
+.login a {
+	color:#009c7e;
+	line-height:20px;
+	text-decoration:none;
+	font-size: 14px;
+}
+
+.login a:hover {
+	color:#009c7e;
+	text-decoration:underline;
+}
+
+.login input[type='checkbox']{
+    padding: 0;
+    height: 20px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 14px;
+	width:20px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#999;
+	float:left;
+	
+}
+
+.login .advancedSearchCheckbox {
+        margin-right: -4px;	
+		
+}
+
+.login #remember-content-wrap {
+    float: left;
+    width: 315px;
+}  
+
+.login #info-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+.login .info {
+    width: 50%;
+    float: left;	
+}
+
+.login .login-button-container-centered {
+	widows:275px;
+	height:43px;
+    text-align: center;
+    background-color: #009c7e;
+	margin-bottom:10px;
+	border:#CCC solid 1px;
+	margin-top:40px;
+}
+
+.login .login-button {
+    left: auto;
+    display: inline-block;
+    cursor: pointer !important;
+	
+}
+
+.login .login-button-center {
+    text-align: center;
+    width: 256px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #009c7e;
+    background-position: left -40px;
+    background-repeat: repeat-x;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.login .login-button-center{
+    float: left;
+    height: 40px;
+	}
+
+/*End of Login CSS*/
+
+.login  #info-wrap-signup {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+.login .info-signup {
+    width: 100%;
+    float: left;	
+}
+
+.login .info-signup-bottom {
+    width: 100%;
+    float: left;
+	margin:0px;	
+}
+
+.login .signup-button-container-centered {
+	widows:275px;
+	height:43px;
+    text-align: center;
+    /*background-color: #009c7e;
+	border:#CCC solid 1px;*/
+	margin-bottom:10px;	
+	margin-top:120px;
+}
+
+.login .signup-button {
+    left: auto;
+    display: inline-block;
+    cursor: pointer !important;
+	
+}
+
+.login .signup-button-center {
+    text-align: center;
+    width: 256px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #009c7e;
+    background-position: left -40px;
+    background-repeat: repeat-x;
+	font-family:"open Sans", "Open Sans Extrabold", "Open Sans Light", "Open Sans Semibold";
+}
+
+.login .signup-button-center{
+    float: left;
+    height: 40px;
+	}
+	
+.login .p-terms {
+	font-family:"open Sans", "Open Sans Extrabold", "Open Sans Light", "Open Sans Semibold";
+	font-size:14px;
+	color:#666666;
+	line-height:1.5em;
+}

@@ -1,0 +1,115 @@
+<div ng-controller="PlacesvisitedSummaryCtrl">
+
+      <div class="col-ss-12 hm-bottom purple">
+        <div class="container">
+           
+            <div class="featured-boxes">
+                <div class="box-tab">
+                    <button id="set_1" class="getDefoult" onclick="viewTab(1);">Home</button>
+                    
+                    <button id="set_2" class="active getDefoult" onclick="viewTab(2);">Places Visited</button>
+                    <button id="set_3" class="getDefoult" onclick="viewTab(3);">Locations</button>
+                    <button id="set_4" class="getDefoult" onclick="viewTab(4);">Driving</button>
+               </div>     
+                    
+                </div>
+                
+                </div>
+             
+ <div>
+ 
+ <br>
+
+ 
+ 
+ 
+ </div>               
+                
+<form>
+<div>
+Summary<img width="20" heignt="20" alt="Summary" src="/tidels/resources/img/arrow.png" ng-click="setSummary();">
+&nbsp&nbsp&nbsp&nbsp&nbsp
+Calender<img width="20" heignt="20" alt="Summary" src="/tidels/resources/img/arrow.png" ng-click="setCalender();">
+&nbsp&nbsp&nbsp&nbsp&nbsp
+Ref Date
+
+ <input type="text" id="date1" value='{{ref_date_now}}'><img width="20" heignt="20" src="/tidels/resources/img/arrow.png" ng-click="changeDate();">
+
+
+<span ng-show="view=='summary'">
+<h2>
+                <a href="#/placesvisitedsummary/{{ref_date}}/today/{{display_type}}">Today&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedsummary/{{ref_date}}/days7/{{display_type}}">7 Days&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedsummary/{{ref_date}}/weeks4/{{display_type}}">4 Weeks&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedsummary/{{ref_date}}/months6/{{display_type}}">6 Months&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedsummary/{{ref_date}}/months12/{{display_type}}">12 Months&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+
+ </h2>  
+ </span>
+ <span ng-show="view=='calender'">
+<h2>
+                <a href="#/placesvisitedcalender/{{ref_date}}/daily/{{display_type}}">Daily&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedcalender/{{ref_date}}/Weekly/{{display_type}}">Weekly&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedcalender/{{ref_date}}/monthly/{{display_type}}">monthly&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedcalender/{{ref_date}}/halfyearly/{{display_type}}">Half Yearly&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedcalender/{{ref_date}}/yearly/{{display_type}}">Yearly&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+
+ </h2>  
+  </span>
+   
+ <h3>
+ 
+                <a href="#/placesvisitedsummary/{{ref_date}}/{{time_period}}/dash"  class="active getDefoult" >Dashboard&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                <a href="#/placesvisitedsummary/{{ref_date}}/{{time_period}}/chart">Chart&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+</h3>
+
+
+<br> 
+<!-- <input ui-date ui-date-format="DD, d MM, yy" ng-model="myDate"> -->
+<span ng-show="display_type!='chart'">
+<div id="viewid"></div>
+
+</div>
+
+<div ui-grid="{ data: myData }" class="myGrid"></div>
+</span>
+<span ng-show="display_type=='chart'">
+ <iframe ng-src="{{charturl}}" style="width:90%; height: 600px; margin: 1%;" frameborder="0"></iframe>
+
+</span>
+
+<script type="text/javascript">
+ng.ready( function() {
+	var my_basic_cal = new ng.Calendar({
+        input: 'date1',            // the input field id
+        start_date: 'year - 5',   // the start date (default is today)
+        end_date: 'year+5',      // the end date (related to start_date, 4 years from today)
+        display_date: new Date(),   // the display date (default is start_date)
+        events: {
+            onSelect: function(dt){
+		    			var dd = dt.getDate();
+		    			var mm = dt.getMonth()+1; //January is 0!
+		    			var yyyy = dt.getFullYear();
+		    			
+		    			if(dd<10) {
+		    			    dd='0'+dd
+		    			} 
+		
+		    			if(mm<10) {
+		    			    mm='0'+mm
+		    			} 
+		
+		    		ref_date = yyyy+mm+dd;
+		    		document.getElementById("date1").value = ref_date;
+
+            },
+            }        
+    });
+    
+    //my_basic_cal.select_date('year+5');
+    //alert('{{ref_date_now}}');
+	my_basic_cal.select_date(document.getElementById("date1").value);
+    
+});
+</script>
+
