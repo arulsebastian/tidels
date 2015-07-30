@@ -14,7 +14,7 @@
       <ul class="menu">
         <li class="current-menu-item"><a href="#/">Home</a></li>
         <li class="menu-item-has-children"><a href="#/categories">Study</a></li>
-        <li class="menu-item-has-children"><a href="#">About</a></li>
+        <li class="menu-item-has-children"><a href="#/about">About</a></li>
                 <li class="menu-item-has-children" ng-show="!user.authenticated"><a href="{{httpPath}}#/login" menu-item>Log In</a></li>
             <li class="menu-item-has-children" ng-show="!user.authenticated"><a href="{{httpPath}}#/signup" menu-item>Sign Up</a></li>
             <li class="menu-item-has-children" ng-show="user.authenticated"><a href="{{httpPath}}#/user-profile">Welcome {{ user.first_name }}!</a></li>

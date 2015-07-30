@@ -14,6 +14,7 @@ var app = angular.module('myApp', ['ngRoute', 'ui.bootstrap',
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'resources/partials/home.html', controller: 'HomeCtrl', public: true});
+  $routeProvider.when('/about', {templateUrl: 'resources/partials/about.html', controller: 'HomeCtrl', public: true});
   $routeProvider.when('/categories', {templateUrl: 'resources/partials/categories.html', controller: 'categoriesCtrl', public: true});
   $routeProvider.when('/course', {templateUrl: 'resources/partials/course.html', controller: 'courseCtrl', public: true});
   $routeProvider.when('/quiz', {templateUrl: 'resources/partials/quiz.html', controller: 'quizCtrl', public: true});
