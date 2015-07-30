@@ -1,0 +1,119 @@
+<div ng-controller="UserProfileCtrl">
+  <tabset id="tab1">
+    <tab heading="User Profile">
+    				<form class="form" ng-submit="HomeCtrl.submit()">
+						<div ng-show="!loading">
+							<table>
+								<tr>
+									<td><img ng-src="{{user.properties['photo'].value}}" /></td>
+									<td>
+										<button id="edit" class="" ng-click="editUser();">Edit</button>
+										<button id="save" type="submit" class="getDefoult"
+											ng-click="saveUser();">Save</button>
+									</td>
+								</tr>
+							</table>
+
+						</div>
+					<table>
+							<tr>
+								<td><h7>First name</h7></td>
+								<td><input id="first_name" ng-disabled="userDisabled"
+									placeholder="First Name" type="text" class="form-control"
+									ng-model="user.first_name"></td> 
+							</tr>
+						<tr>
+						<td><h7>Last name</h7></td>
+						<td><input id="last_name"
+							ng-disabled="userDisabled" placeholder="Last Name" type="text"
+							class="form-control" ng-model="user.last_name"></td>
+						</tr> 
+						<tr>
+						<td><h7>E-mail</h7></td>
+						<td><input
+							id="login" ng-disabled="userDisabled" placeholder="Email"
+							type="text" class="form-control" ng-model="user.email"
+							ua-is-email></td>
+						<tr> 
+						<tr>
+						<td><h7>Street1</h7></td>
+						<td><input id="street1"
+							ng-disabled="userDisabled" placeholder="Street1" type="text"
+							class="form-control" ng-model="user.properties['street1'].value"></td>
+						</tr>
+						<tr>
+						<td><h7>Street2</h7></td>
+						<td><input id="street2" ng-disabled="userDisabled"
+							placeholder="Street2" type="text" class="form-control"
+							ng-model="user.properties['street2'].value"></td>
+						</tr> 
+						<tr>
+						<td><h7>City</h7></td>
+						<td><input
+							id="city" ng-disabled="userDisabled" placeholder="City"
+							type="text" class="form-control"
+							ng-model="user.properties['city'].value"></td>
+						</tr> 
+						<tr>
+						<td><h7>State</h7></td>
+						<td><input
+							id="state" ng-disabled="userDisabled" placeholder="State"
+							type="text" class="form-control"
+							ng-model="user.properties['state'].value"></td>
+						</tr> 
+						<tr>
+						<td><h7>Country</h7></td>
+						<td><input
+							id="country" ng-disabled="userDisabled" placeholder="Country"
+							type="text" class="form-control"
+							ng-model="user.properties['country'].value"></td>
+						</tr>
+						<tr>
+						<td><h7>Zip code</h7></td>
+						<td><input
+							id="zipcode" ng-disabled="userDisabled" placeholder="zipcode"
+							type="text" class="form-control"
+							ng-model="user.properties['zipcode'].value"></td>
+						</tr>
+						<tr>
+						<td><h7>Age</h7></td>
+						<td><input
+							id="age" ng-disabled="userDisabled" placeholder="age"
+							type="text" class="form-control"
+							ng-model="user.properties['age'].value"></td>
+						</tr>
+						<tr>
+						<td><h7>Gender</h7></td>
+						<td><input
+							id="gender" ng-disabled="userDisabled" placeholder="gender"
+							type="text" class="form-control"
+							ng-model="user.properties['gender'].value"></td>
+						</tr>
+						<tr>
+						<td><h7>Qualification</h7></td>
+						<td><input
+							id="qualifications" ng-disabled="userDisabled" placeholder="qualifications"
+							type="text" class="form-control"
+							ng-model="user.properties['qualifications'].value"></td>
+						</tr>
+						
+					</table>
+				</form>
+    
+    
+    
+    
+    </tab>
+    <tab heading="Teachers">
+    </tab>
+    <tab heading="Parent">
+    </tab>
+    <tab heading="Stuent">
+    <div class="gridWidthWrapper">
+        <div  class="gridStyle"  id="grid1" ui-grid="{ data: myData, options: gridOptions }" class="grid"></div>
+    </div>
+    </tab>
+  </tabset>
+
+  
+  

@@ -24,8 +24,8 @@
 <link rel="stylesheet" href="/tidels/resources/css/ui-grid.css"/>
 
 <!-- Google font -->
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='E:\Projects\tidels\trunk\src\main\webapp\resources\css\fonts\lato.css' rel='stylesheet' type='text/css'>
+<link href='E:\Projects\tidels\trunk\src\main\webapp\resources\css\fonts\raleway.css' rel='stylesheet' type='text/css'>
 <!-- Css -->
 <link rel="stylesheet" type="text/css" href="/tidels/resources/css/library/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -34,7 +34,7 @@
 <link rel="stylesheet" type="text/css" href="/tidels/resources/css/style.css">
  
      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
   <script src="https://app.userapp.io/js/userapp.client.js"></script>
 <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
    <script src="/tidels/resources/js/tab.js"></script>

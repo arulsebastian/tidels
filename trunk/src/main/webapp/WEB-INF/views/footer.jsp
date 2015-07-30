@@ -1,4 +1,4 @@
-<!-- FOOTER -->
+
 <footer id="footer" class="footer">
 <div class="first-footer">
   <div class="container">
@@ -56,17 +56,22 @@
     </div>
   </div>
 </div>
+
+  </footer>
+  <!-- END / FOOTER --> 
 <div class="second-footer">
   <div class="container">
     <div class="contact">
       <div class="email"> <i class="icon fa fa-envelope-o fa-1"></i> <a href="#">email@yourdomain.com</a> </div>
       <div class="phone"> <i class="icon fa fa-mobile"></i> <span>+91 989 999 888</span> </div>
       <div class="address"> <i class="fa fa-map-marker"></i> <span>Address goes here</span> </div>
+      <div class="address"></div>
+      <div class="social"><img src="/tidels/resources/images/feature/Youtube.png"></div>
+      <div class="social"><img src="/tidels/resources/images/feature/Linkedin.png"></div>
+      <div class="social"><img src="/tidels/resources/images/feature/GooglePlus.png"></div>
+      <div class="social"><img src="/tidels/resources/images/feature/Twitter.png"></div>
+      <div class="social"><img src="/tidels/resources/images/feature/Facebook.png"></div>
     </div>
   </div>
-  </footer>
-  <!-- END / FOOTER --> 
-
-  
-  
- 
+  <!-- END / FOOTER -->   
+</div>

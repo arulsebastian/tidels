@@ -1,0 +1,119 @@
+<div ng-controller="categoriesCtrl">
+    <!-- SUB BANNER -->
+    <section class="sub-banner sub-banner-course">
+        <div class="awe-static bg-sub-banner-course"></div>
+        <div class="container">
+            <div class="sub-banner-content">
+                <h2 class="text-center">Categories</h2>
+            </div>
+        </div>
+    </section>
+    <!-- END / SUB BANNER -->
+
+
+    
+
+
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Login AS</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a ng-click="selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+<textarea name="comment" cols="5" rows="2" disabled="disabled">aaaaa</textarea>
+<button onclick="javascript:validateUser()">Edit</button>
+<button onclick="javascript:validateUser1()">Save</button>
+
+
+    <script type="text/javascript">
+        function validateUser(){
+            
+            document.getElementsByName("comment")[0].disabled=false;
+        }
+	 function validateUser1(){
+            
+            document.getElementsByName("comment")[0].disabled=true;
+        }
+    </script>
+<script language="JavaScript" type="text/javascript"> 
+function HandleBrowseClick() { var fileinput = document.getElementById("browse"); fileinput.click(); } function Handlechange() { var fileinput = document.getElementById("browse"); var textinput = document.getElementById("filename"); textinput.value = fileinput.value; } </script> 
+<input type="file" id="browse" name="fileupload" style="display: none" onChange="Handlechange();"/> 
+<input type="text" id="filename" readonly="true"/> <input type="button" value="Click to select file" id="fakeBrowse" onclick="HandleBrowseClick();"/>
+
+<script language="JavaScript" type="text/javascript"> 
+function HandleBrowseClick() { var fileinput = document.getElementById("browse"); fileinput.click(); } function Handlechange() { var fileinput = document.getElementById("browse"); var textinput = document.getElementById("filename"); textinput.value = fileinput.value; } </script> 
+<input type="file" id="browse" name="fileupload" style="display: none" onChange="Handlechange();"/> 
+<input type="text" id="filename" readonly="true"/> <input type="button" value="Click to select file" id="fakeBrowse" onclick="HandleBrowseClick();"/>
+
+<script language="JavaScript" type="text/javascript"> 
+function HandleBrowseClick() { var fileinput = document.getElementById("browse"); fileinput.click(); } function Handlechange() { var fileinput = document.getElementById("browse"); var textinput = document.getElementById("filename"); textinput.value = fileinput.value; } </script> 
+<input type="file" id="browse" name="fileupload" style="display: none" onChange="Handlechange();"/> 
+<input type="text" id="filename" readonly="true"/> <input type="button" value="Click to select file" id="fakeBrowse" onclick="HandleBrowseClick();"/>
+    
+    
+                <!-- SIDEBAR CATEGORIES -->
+                <div class="col-md-3 col-md-pull-9">
+                    <aside class="sidebar-categories">
+                        <div class="inner">
+ 
+          <div class="widget">
+                                <ul class="list-style-block">
+                                    <li class="current"><a href="#/categories">Grade</a></li>
+                                    <li><a href="#/categories">Qualifications</a></li>
+                                </ul>
+                            </div>
+                      
+                            <!-- WIDGET TOP -->
+                            <div class="widget">
+                                <ul class="list-style-block">
+                                    <li class="current"><a href="#">Featured</a></li>
+                                    <li><a href="#">Staff pick</a></li>
+                                    <li><a href="#">Free</a></li>
+                                    <li><a href="#">Top paid</a></li>
+                                </ul>
+                            </div>
+                            <!-- END / WIDGET TOP -->
+    
+                            <!-- WIDGET CATEGORIES -->
+                            <div class="widget widget_categories">
+                                <ul class="list-style-block">
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Art and Photography</a></li>
+                                    <li><a href="#">Health and Fitness</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                    <li><a href="#">Math and Science</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">Social Science</a></li>
+                                    <li><a href="#">Game</a></li>
+                                    <li><a href="#">Crafts and Hobbies</a></li>
+                                    <li><a href="#">Music</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                </ul>
+                            </div>
+                            <!-- END / WIDGET CATEGORIES -->
+    
+                           
+                        </div>
+                    </aside>
+                </div>
+                <!-- END / SIDEBAR CATEGORIES -->
+    
+            </div>
+        </div>
+    </section>
+    <!-- END / CATEGORIES CONTENT -->
+ </div>   

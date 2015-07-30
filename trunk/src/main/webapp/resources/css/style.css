@@ -188,6 +188,18 @@ h6 {
     padding: 0;
     list-style: none
 }
+.social
+{
+	display:inline-block;
+	margin-right:10px;
+	font-family:Lato,sans-serif;
+	font-size:14px;
+	float:right;
+}
+
+
+/*add*/
+.banner-slogan{width:1165px; margin:0 auto; text-align:left;}
 .bold {
     font-weight: 700
 }
@@ -463,9 +475,9 @@ h6 {
     width: 100%
 }
 .mc-item .meta-categories {
-    position: absolute;
-    top: 10px;
-    left: 8px;
+    position:;
+    bottom: 10px;
+    right: 8px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -475,7 +487,8 @@ h6 {
     line-height: 22px;
     color: #fff;
     padding: 0 8px;
-    background-color: #37abf2
+    background-color: #37abf2;
+    text-align: center;
 }
 .mc-item .meta-categories a {
     color: #fff
@@ -2126,8 +2139,8 @@ table.mc-table tbody .new .submissions a:before {
 }
 .social {
     font-size: 0;
-    margin-left: -8px;
-    margin-right: -8px
+   margin-left: 10px;
+  margin-right: 0px;
 }
 .social a {
     display: inline-block;
@@ -8246,6 +8259,7 @@ footer#footer.footer-style-2 {
     #slide-home .img img {
         height: 450px!important;
     }
+    
 }
 /*add*/
 

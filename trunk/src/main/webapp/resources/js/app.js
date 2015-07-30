@@ -28,7 +28,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/set-password', {templateUrl: 'resources/partials/set-password.html', set_password: true});
   $routeProvider.when('/articles', {templateUrl: 'resources/partials/articles.html', controller: 'ArticlesCtrl'});
   $routeProvider.when('/subjects', {templateUrl: 'resources/partials/subjects.html', controller: 'ModalDemoCtrl'});  
-  $routeProvider.when('/user-profile', {templateUrl: 'resources/partials/user_profile.html', controller: 'UserProfileCtrl'});  
+  $routeProvider.when('/user-profile', {templateUrl: 'resources/partials/user_profile.html', controller: 'UserProfileCtrl'});
   $routeProvider.when('/placesvisitedsummary/:ref_date/:time_period/:display_type', {templateUrl: 'resources/partials/placesvisitedSummary.html', controller: 'PlacesvisitedSummaryCtrl'});
   $routeProvider.when('/placesvisitedsummarychart/:ref_date/:time_period/:display_type', {templateUrl: 'resources/partials/placesvisitedSummaryChart.html', controller: 'PlacesvisitedSummaryChartCtrl'});
   $routeProvider.when('/placesvisitedcalender/:ref_date/:time_period/:display_type', {templateUrl: 'resources/partials/placesvisitedCalender.html', controller: 'PlacesvisitedCalenderCtrl'});
